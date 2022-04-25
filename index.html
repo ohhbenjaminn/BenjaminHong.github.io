@@ -4,9 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
+    <title>Benjamin Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a56f24906f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Hellow world I love pizza</p>
+<!-- <---------------- Index(Home/top page) -----------------> 
+    
+    <nav>
+        <div class="nav-wrapper">
+          <!-- <a href="#" class="brand-logo center">Logo</a> -->
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="background-image"></div>
+    <div class="container">
+        <h2>Hi, I'm</h2> 
+        <h3>Benjamin Hong!</h3>
+    </div>
+
+    <section class="container section scrollspy" id="home">
+        <div class="top"></div>
+    </section>
+
+    <!-- <---------------- Projects(bottom page) -----------------> 
+    <section class="container section scrollspy" id="projects">
+        <div class="bottom"></div>
+        <h4 style="text-align: center;"><strong>Projects</strong></h4>
+        <br>
+        <div style="text-align: left;" class="container">
+            <h5>Project 1</h5>
+            <h5>Project 2</h5>
+            <h5>Project 3</h5>
+        </div>
+        
+    </section>
+<!-- <---------------- About me section(middle page) -----------------> 
+    <section class="container section scrollspy" id="about">
+        <div class="middle"></div>
+        <h4 style="text-align: center;"><strong>About Me</strong></h4>
+        <p style="text-align: center;">
+            A Junior Full-Stack software engineer transitioning careers from a Behavioral Therapist. With my strong communication skill and my love for problem solving, I would be a great asset to your company. I am highly motivated and ready to expand my skill set through the projects and challenges that lie ahead of me. 
+
+        </p>
+        <br>
+        <h5>Skills:</h5>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>Express</li>
+    <br><br>    
+    <h6><strong>Contact Information:</strong></h6>
+    <br>
+    <div class="contactContainer">    
+        <div style="text-align: center;" id="contact-icons">
+            <a href="https://docs.google.com/document/d/120I_rmPsDdvhwoJRUBVCxKRDq9-CqbOF3A_KqBayW24/edit"><i class="fa-solid fa-briefcase fa-7x" id="icons"></i></a>
+            <h4 style="margin-top: 0.25em;">Resume</h4>
+        </div>
+        <div style="text-align: center;" id="contact-icons">
+            <a href="https://github.com/ohhbenjaminn"><i class="fa-brands fa-github fa-7x" id="icons"></i></a>
+            <h4 style="margin-top: 0.25em;">Github</h4>
+        </div>
+        <div style="text-align: center;" id="contact-icons">
+            <a href="https://www.linkedin.com/in/benjaminhongbh/"><i class="fa-brands fa-linkedin fa-7x" id="icons"></i></a>
+            <h4 style="margin-top: 0.25em;">LinkedIn</h4>
+        </div>
+        <div style="text-align: center;" id="contact-icons">
+            <a href="mailto: BenajminYHong@gmail.com"><i class="fa-solid fa-envelope fa-7x" id="icons"></i></a>
+            <h4 style="margin-top: 0.25em;">Email</h4>
+        </div> 
+    </div>
+    </section>
+
+   
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
 </body>
+
 </html>
