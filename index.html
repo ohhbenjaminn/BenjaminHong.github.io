@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a56f24906f.js" crossorigin="anonymous"></script>
@@ -13,86 +16,151 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- <---------------- Index(Home/top page) -----------------> 
-    
-    <nav>
-        <div class="nav-wrapper">
-          <!-- <a href="#" class="brand-logo center">Logo</a> -->
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-        </div>
-    </nav>
-
-    <div class="background-image"></div>
-    <div class="container">
-        <h2>Hi, I'm</h2> 
-        <h3>Benjamin Hong!</h3>
+    <div id="page-wrapper">
+        <section id="header">
+            <div class="header">
+                <nav>
+                    <div class="nav-wrapper">
+                      <!-- <a href="#" class="brand-logo center">Logo</a> -->
+                      <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    <!-- <---------------- Index(Home) -----------------> 
+        <section id="home-page">
+        <!-- class="container section scrollspy" id="home" -->
+            <div class="home-page" >
+                <h1>Hi, I'm <br> Benjamin Hong!</h1> 
+            </div>
+        </section>
+    <!-- <---------------- About Me(Home) -----------------> 
+        <section id="about">
+            <br> 
+            <h2 style="text-align: center;"><strong>About Me</strong></h2>
+            <div class="about">
+                <p style="text-align: center;">
+                    First Generation college graduate and Software Engineer with experience in social sciences and cross-functional teamwork. Detail oriented, meticulous, and a creative problem solver, known for generating the best possible solution many overlook. With strong work ethic, dependability, and honesty, contribute strong interpersonal and technical skills to team and client collaborations. 
+                </p>
+            </div>
+            <br>
+            <h2 style="text-align: center;"><strong>Skills</strong></h2>
+            <br>
+            <div >
+                <div class="skills">
+                    <i class="fa-brands fa-html5 code fa-4x"></i>
+                    <i class="fa-brands fa-css3-alt code fa-4x"></i>
+                    <!-- <i class="fa-solid fa-code code fa-4x"></i> -->
+                    <!-- <h2 class="icon-text">HTML/CSS</h2> -->
+                    <i class="fa-brands fa-js-square code fa-4x"></i>
+                    <!-- <p class="icon-text">Javascript</p> -->
+                    <i class="fa-brands fa-python code fa-4x"></i>
+                    <!-- <p class="row text-center">Python</p> -->
+                    <i class="fa-brands fa-react code fa-4x"></i>          
+                    <!-- <p class="icon-text">React</p>           -->
+                    <i class="fa-brands fa-node-js code fa-4x"></i>
+                    <!-- <p class="icon-text">Node JS</p> -->
+                </div>
+                
+            </div>
+            <br>
+        </section>
+    <!-- <---------------- Projects() -----------------> 
+        <section id="projects">
+            <br>
+            <h3 class="title-projects" style="text-align: center;"><strong>Projects</strong></h3>
+            <br><br>
+                <div style="text-align: left;" class="container" id="projects">
+                    
+                    <div class="card1">
+                        <a href="https://github.com/ohhbenjaminn/Backjack-Project" class="card1"><img src="images/blackjackScreenshot.png" alt="Blackjack Project" /></a>
+                    </div>
+                    <div class="description">
+                        <h3>Project 1</h3>
+                        <p>Stop by to have some fun and test your skills playing a game of Blackjack!</p>
+                    </div>
+                    
+                    <div class="card2">
+                        <a href="https://github.com/ohhbenjaminn/PinDrop" class="card2"><img src="images/pinScreenshot.png" alt="Pin Drop" /></a>
+                    </div>
+                    <div class="description">
+                        <h3>Project 2</h3>
+                        <p>Boredom, it's real. Many times thinking about what to do can drive many crazy. Don't fret, this app caters to all your needs from current and upcoming events. It's event categorized to suit everyones taste.  </p>
+                    </div>
+                    
+                    <div class="card3">
+                        <a href="https://github.com/ohhbenjaminn/doggyDate" class="card3"><img src="images/doggyScreenshot.png" alt="Doggy Date" /></a>
+                    </div>
+                    <div class="description">
+                        <h3>Project 3</h3>
+                        <p>Do you ever become completly puzzled when thinking about what to do with your dog. This app will take care of that, this is a dog event curator that keeps track of creating and attending events for your pup.</p>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+                <br>
+        </section>
+    <!-- <---------------- Education() -----------------> 
+        <section id="education">
+            <br>
+            <h4>Education & Experience</h4>
+            <br><br>
+            <div class="education" id="education">
+                <div class="college">
+                    <i class="fa fa-graduation-cap cap fa-4x"></i>
+                    <h5>Cal State University, Los Angeles</h5>
+                    <p>2016-2018</p>
+                    <p>Bachelor of Arts in Sociology</p>
+                </div>
+                <div class="bootcamp">
+                    <i class="fa fa-code code fa-4x"></i>
+                    <h5>General Assembly</h5>
+                    <p>2022</p>
+                    <p>Full Stack Web Development</p>
+                </div>
+            </div>
+            
+        </section>
+    <!-- <---------------- Contact() -----------------> 
+        <section id="contact">
+            <br>
+            <h6><strong>Contact Information</strong></h6>
+            <br><br>
+            <div class="contactContainer" id="contact">    
+                <div style="text-align: center;" id="contact-icons">
+                    <a href="https://docs.google.com/document/d/120I_rmPsDdvhwoJRUBVCxKRDq9-CqbOF3A_KqBayW24/edit"><i class="fa-solid fa-briefcase fa-6x" id="icons"></i></a>
+                    <!-- <h7 style="margin-top: 0.25em;">Resume</h7> -->
+                </div>
+                <div style="text-align: center;" id="contact-icons">
+                    <a href="https://github.com/ohhbenjaminn">
+                        <i class="fa-brands fa-github fa-6x" id="icons"></i>
+                    </a>
+                    <!-- <h7 style="margin-top: 0.25em;">Github</h7> -->
+                </div>
+                <div style="text-align: center;" id="contact-icons">
+                    <a href="https://www.linkedin.com/in/benjaminhongbh/">
+                        <i class="fa-brands fa-linkedin fa-6x" id="icons"></i>
+                    </a>
+                    <!-- <h7 style="margin-top: 0.25em;">LinkedIn</h7> -->
+                </div>
+                <div style="text-align: center;" id="contact-icons">
+                    <a href="mailto: BenajminYHong@gmail.com">
+                        <i class="fa-solid fa-envelope fa-6x" id="icons"></i>
+                    </a>
+                    <!-- <h7 style="margin-top: 0.25em;">Email</h7> -->
+                </div> 
+            </div>
+            <br><br>
+            <h8>© Copyright 2022 - All Rights Reserved</h8>
+        </section>
     </div>
-
-    <section class="container section scrollspy" id="home">
-        <div class="top"></div>
-    </section>
-
-    <!-- <---------------- Projects(bottom page) -----------------> 
-    <section class="container section scrollspy" id="projects">
-        <div class="bottom"></div>
-        <h4 style="text-align: center;"><strong>Projects</strong></h4>
-        <br>
-        <div style="text-align: left;" class="container">
-            <h5>Project 1</h5>
-            <h5>Project 2</h5>
-            <h5>Project 3</h5>
-        </div>
-        
-    </section>
-<!-- <---------------- About me section(middle page) -----------------> 
-    <section class="container section scrollspy" id="about">
-        <div class="middle"></div>
-        <h4 style="text-align: center;"><strong>About Me</strong></h4>
-        <p style="text-align: center;">
-            A Junior Full-Stack software engineer transitioning careers from a Behavioral Therapist. With my strong communication skill and my love for problem solving, I would be a great asset to your company. I am highly motivated and ready to expand my skill set through the projects and challenges that lie ahead of me. 
-
-        </p>
-        <br>
-        <h5>Skills:</h5>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Python</li>
-            <li>Node.js</li>
-            <li>Express</li>
-    <br><br>    
-    <h6><strong>Contact Information:</strong></h6>
-    <br>
-    <div class="contactContainer">    
-        <div style="text-align: center;" id="contact-icons">
-            <a href="https://docs.google.com/document/d/120I_rmPsDdvhwoJRUBVCxKRDq9-CqbOF3A_KqBayW24/edit"><i class="fa-solid fa-briefcase fa-7x" id="icons"></i></a>
-            <h4 style="margin-top: 0.25em;">Resume</h4>
-        </div>
-        <div style="text-align: center;" id="contact-icons">
-            <a href="https://github.com/ohhbenjaminn"><i class="fa-brands fa-github fa-7x" id="icons"></i></a>
-            <h4 style="margin-top: 0.25em;">Github</h4>
-        </div>
-        <div style="text-align: center;" id="contact-icons">
-            <a href="https://www.linkedin.com/in/benjaminhongbh/"><i class="fa-brands fa-linkedin fa-7x" id="icons"></i></a>
-            <h4 style="margin-top: 0.25em;">LinkedIn</h4>
-        </div>
-        <div style="text-align: center;" id="contact-icons">
-            <a href="mailto: BenajminYHong@gmail.com"><i class="fa-solid fa-envelope fa-7x" id="icons"></i></a>
-            <h4 style="margin-top: 0.25em;">Email</h4>
-        </div> 
-    </div>
-    </section>
-
-   
-
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
@@ -101,5 +169,4 @@
         });
     </script>
 </body>
-
 </html>
